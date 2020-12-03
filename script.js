@@ -4,9 +4,9 @@ var score=document.getElementById('score')
 var popup=document.querySelector('.popup')
 var main=document.querySelector('.main')
 var popupbtn=document.querySelector('#popupbtn')
-var answerArray=[],selectedAnswer=[];
+var answerArray=[],selectedAnswer=[]; 
 
-// function to get API vaulues
+// function to get API values
 function httpRequest()
 {
     var http=new XMLHttpRequest();
