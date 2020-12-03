@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+    width:100%;
+    height:100%;
+    display: flex;
+    background-color:#bdbdde;
+}
+/* Title div */
+.title{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;    
+    font-size: 50px;
+    margin:20px;
+    color: #310063;
+    text-shadow: 2px 2px #ffffff
+}
+/* main div */
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+    margin-left: 15%;
+    /* background-color: blue; */
+    width: 100%;
+    height:100%;
+}
+
+/* div containing all questions and options */
+#content{
+    font-size:25px;
+    border-radius: 5px;
+    background-color:white;
+    padding: 5px
+}
+
+/* div containing each questions and options  */
+.question{
+    background-color: #6d599b;
+    margin: 5px;
+}
+
+/* list element(question) */
+li{
+    list-style: none;
+    padding: 20px;
+    font-family: 'Courgette', cursive;
+    color: #e9e9f7; 
+}
+
+/* label elemwnts (options) */
+li label{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size:20px;
+    width:100%;
+    height:100%;
+    margin-top: 10px;
+    color:#030303;
+    padding: 20px;
+}
+/* submit button div */
+#submit{
+    text-align: center;
+    margin: 10px;
+}
+/* submit button element */
+#submit > button{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(248, 252, 2, 0.877);
+    letter-spacing:0px;
+}
+/*  button hover */
+#submit > button:hover{
+    cursor: pointer;
+    background-color:rgb(70, 148, 250);
+    color:rgba(255, 255, 255, 0.877);
+    border:2px solid white;
+    transition:letter-spacing 0.2s linear;
+    letter-spacing:2px;
+}
+/* popup div while click the submit button */
+.popup{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    /* transform: translateY(-800px); */
+    display: none;
+}
+.popup p{
+    color: rgb(5, 0, 77);
+    font-size:40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#popupbtn{
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 2.5px;
+}
+#popupbtn:hover{
+    background-color: rgba(255, 238, 0, 0.774);
+}
+/*div align score value */
+#score{
+    margin-top: -30px;
+   }
+   /* div containing score text and score value */
+.score-card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color: #f5ca22;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 15%;
+    height: 40%;
+    width: 40%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+    animation: popup 0.5s ease forwards;
+}
+#radio{
+    cursor: pointer;
+}
+/* animation foe the popup */
+@keyframes popup{
+    0% {
+        transform: translateY(-800px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+      
+    }
+}
