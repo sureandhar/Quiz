@@ -10,7 +10,7 @@ var answerArray=[],selectedAnswer=[];
 function httpRequest()
 {
     var http=new XMLHttpRequest();
-    http.open('GET', 'http://5d76bf96515d1a0014085cf9.mockapi.io/quiz',true);
+    http.open('GET', 'https://5d76bf96515d1a0014085cf9.mockapi.io/quiz',true);
     http.send();
     return http;
 }
